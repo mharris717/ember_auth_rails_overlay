@@ -1,4 +1,4 @@
 c.base "rails new foo", :type => :command, :path => :foo
-c.overlay "/code/orig/fs_template/vol/rails_widget"
+c.overlay "https://github.com/mharris717/widget_overlay_rails.git"
 c.command "rake ember_auth_rails_engine:install:migrations", :after
 c.command "rake db:migrate db:seed", :after
